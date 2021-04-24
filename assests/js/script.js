@@ -1,14 +1,11 @@
 $(document).ready(function () {
   $("#arrow-down").on('click', function () {
-    console.log('hello');
-    // $(window).scroll(500);
     $('.msv-intro__wrap').addClass('msv-intro__wrap--hidden');
     $('.msv-intro__wrap').siblings('.msv-intro__button--hidden').addClass('msv-intro__button--visible');
   });
   if ($(window).width() > 768) {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 150) {
-        console.log('150');
         $('.msv-intro__wrap').addClass('msv-intro__wrap--hidden');
         $('.msv-intro__wrap').siblings('.msv-intro__button--hidden').addClass('msv-intro__button--visible');
       } else if ($(this).scrollTop() < 150) {
@@ -21,7 +18,6 @@ $(document).ready(function () {
     console.log("yes");
     $(window).scroll(function () {
       if ($(this).scrollTop() < 20) {
-        console.log('150');
         $('.msv-intro__wrap').addClass('msv-intro__wrap--hidden');
         $('.msv-intro__wrap').siblings('.msv-intro__button--hidden').addClass('msv-intro__button--visible');
       } else if ($(this).scrollTop() < 300) {
@@ -42,6 +38,7 @@ $(document).ready(function () {
       }, 100);
       $()
     });
+
     $('.msv-cross__icon').on('click', function () {
       $('.msv-navbar__container').removeClass('msv-slide');
       $('body').removeClass('msv-overlay');
