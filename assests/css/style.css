@@ -674,6 +674,10 @@ button.footer-contact__form--submit:focus {
     .footer-contact__form--submit {
         max-width: unset;
     }
+
+    .footer-copyright {
+        font-size:14px; 
+     }
 }
 
 
